@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	require_once('../../NoCSRF/nocsrf.php');
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
@@ -54,11 +54,10 @@
 		<h1 class="titulo">Modificar Usuario</h1>
 		<?php if (isset($_GET["error"])) {
 			if ($_GET["error"]==0) {
-				echo "<h4 class=\"error\">Modificado con exito</h4>";	
+				echo "<h4 class=\"error\">Modificado con exito</h4>";
 			}elseif ($_GET["error"]==2) {
 				echo "<h4 class=\"error\">Intentar de Nuevo</h4>";
 			}
-			
 		} ?>
 		<div class="formulario">
 			<form action="modifuserV.php" method="post">
@@ -67,7 +66,7 @@
 				<select name="nivel" >
 					<option value="2">Cliente</option>
 					<option value="0">Administrador</option>
-					<option value="1">Agronomo</option>					
+					<option value="1">Agronomo</option>
 				</select>
 				<input type="hidden" name="_token" value="<?php echo NoCSRF::generate('_token'); ?>">
 				<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
@@ -81,10 +80,9 @@
     </footer>
 </body>
 </html>
-
-<?php 
+<?php
 	}else{
-		header("location: ../../");	
+		header("location: ../../");
 	}
 }else{
 	header("location: ../../");

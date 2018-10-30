@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	require_once('../../NoCSRF/nocsrf.php');
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
@@ -53,7 +53,7 @@
 	<main>
 		<h1 class="titulo">Agregar Finca</h1>
 		<?php if (isset($_GET["error"])) {
-				if ($_GET["error"]==0) {	
+				if ($_GET["error"]==0) {
 					echo "<h4 class=\"error\">Finca modificada con exito</h4>";
 				}elseif($_GET["error"]==2){
 					echo "<h4 class=\"error\">Token Incorrecto</h4>";
@@ -74,8 +74,7 @@
     </footer>
 </body>
 </html>
-
-<?php 
+<?php
 }else{
 	header("location: ../../");
 }

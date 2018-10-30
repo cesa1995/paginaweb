@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	require_once('../../NoCSRF/nocsrf.php');
 	if (isset($_POST["_token"]) and $_SESSION["nivel"]==0) {

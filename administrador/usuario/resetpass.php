@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	require_once('../../NoCSRF/nocsrf.php');
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
@@ -47,13 +47,12 @@
 		<h1 class="titulo">Modificar Usuario</h1>
 		<?php if (isset($_GET["error"])) {
 			if ($_GET["error"]==0) {
-				echo "<h4 class=\"error\">Modificado con exito</h4>";	
+				echo "<h4 class=\"error\">Modificado con exito</h4>";
 			}elseif ($_GET["error"]==2) {
 				echo "<h4 class=\"error\">Intentar de Nuevo</h4>";
 			}else{
 				echo "<h4 class=\"error\">Las contraseñas no sos iguales</h4>";
 			}
-			
 		} ?>
 		<div class="formulario">
 			<form action="resetpassV.php" method="post">
@@ -70,10 +69,9 @@
     </footer>
 </body>
 </html>
-
-<?php 
+<?php
 	}else{
-		header("location: ../../");	
+		header("location: ../../");
 	}
 }else{
 	header("location: ../../");

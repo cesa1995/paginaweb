@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	require_once('../../NoCSRF/nocsrf.php');
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
@@ -54,7 +54,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php 
+            <?php
             include '../../conexion.php';
                 $sql="SELECT * FROM fincas ORDER BY nombre ASC";
                 $statement=$conn->prepare($sql);
@@ -62,7 +62,6 @@
                 $result=$statement->get_result();
                 foreach ($result as $row){
             ?>
-            
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['nombre']; ?></td>
@@ -72,7 +71,7 @@
                 </tr>
             <?php } ?>
             </tbody>
-        </table>        
+        </table>
 	</main>
 	<footer>
         <p>Smart Agroindustry &copy; 2018 by <span>Cesar Contreras</span></p>
@@ -80,7 +79,7 @@
 </body>
 </html>
 
-<?php 
+<?php
 }else{
 	header("location: ../../");
 }

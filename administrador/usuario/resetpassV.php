@@ -8,7 +8,7 @@ if (isset($_POST["_token"]) and $_SESSION["nivel"]==0) {
 			$rcontrasena=$_POST['rcontrasena'];
 			$id = $_POST['id'];
 			if ($contrasena==$rcontrasena) {
-				$password = password_hash($contrasena,PASSWORD_DEFAULT, ['cost' => 12]);		
+				$password = password_hash($contrasena,PASSWORD_DEFAULT, ['cost' => 12]);
 				$query = "UPDATE usuarios SET contrasena=? WHERE id=?";
 				$statement = $conn->prepare($query);
 				$statement->bind_param("ss",$password,$id);

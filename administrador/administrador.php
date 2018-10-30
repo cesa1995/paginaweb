@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
         include '../conexion.php';
@@ -64,8 +64,8 @@
                 </li>
                 <li class="item"><a href="#"><span class="flaticon-sensor"></span>Equipos</a>
                     <ul class="submenu" id="equipos">
-                        <li class="subitem"><a href="../equipo/addequipo.php"><span class="flaticon-agregar"></span>Agregar</a></li>
-                        <li class="subitem"><a href="../equipo/editequipo.php"><span class="flaticon-editar"></span>Editar</a></li>
+                        <li class="subitem"><a href="equipo/addequipo.php"><span class="flaticon-agregar"></span>Agregar</a></li>
+                        <li class="subitem"><a href="equipo/editequipo.php"><span class="flaticon-editar"></span>Editar</a></li>
                     </ul>
                 </li>
                 <li class="item"><a href="../out.php"><span class="flaticon-salir"></span>Salir</a></li>
@@ -75,7 +75,7 @@
     <main>
         <div class="bienvenida">
             <img src="http://placeimg.com/1000/300/any">
-            <h1>Bienvenido/a <?php echo $_SESSION['usuario']; ?></h1>
+            <h2><?php echo $_SESSION['usuario']; ?> <BR>Bienvenido/a a <br>Smart Agroindustry</h2>
         </div>
         <div class="datacontent">
             <article class="data">
@@ -93,7 +93,7 @@
     </footer>
 </body>
 </html>
-<?php 
+<?php
 }else{
 header("location: ../");
 }

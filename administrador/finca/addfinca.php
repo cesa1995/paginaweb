@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	require_once('../../NoCSRF/nocsrf.php');
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
@@ -45,7 +45,7 @@
 	<main>
 		<h1 class="titulo">Agregar Finca</h1>
 		<?php if (isset($_GET["error"])) {
-				if ($_GET["error"]==0) {	
+				if ($_GET["error"]==0) {
 					echo "<h4 class=\"error\">Finca creada con exito</h4>";
 				}elseif($_GET["error"]==2){
 					echo "<h4 class=\"error\">Token Incorrecto</h4>";
@@ -54,7 +54,7 @@
 		<div class="formulario">
 			<form action="addfincaV.php" method="post">
 				<input type="text" name="nombre" placeholder="Nombre" autofocus required>
-				<input type="text" name="adress" placeholder="Direccion" required>	
+				<input type="text" name="adress" placeholder="Direccion" required>
 				<input type="hidden" name="_token" value="<?php echo NoCSRF::generate('_token'); ?>">
 				<input type="submit" value="Agregar">
 			</form>
@@ -65,8 +65,7 @@
     </footer>
 </body>
 </html>
-
-<?php 
+<?php
 }else{
 	header("location: ../../");
 }

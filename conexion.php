@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	$conn = new mysqli("localhost", "root", "Cesitar95.", "agroSmart");
 	if (mysqli_connect_errno()) {
