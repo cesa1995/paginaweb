@@ -51,10 +51,12 @@
         </nav>
     </header>
 	<main>
-		<h1 class="titulo">Agregar Finca</h1>
+		<h1 class="titulo">Modificar Finca</h1>
 		<?php if (isset($_GET["error"])) {
 				if ($_GET["error"]==0) {
 					echo "<h4 class=\"error\">Finca modificada con exito</h4>";
+				}elseif($_GET["error"]==1){
+					echo "<h4 class=\"error\">Numero de telefono no valido</h4>";
 				}elseif($_GET["error"]==2){
 					echo "<h4 class=\"error\">Token Incorrecto</h4>";
 				}
@@ -62,7 +64,8 @@
 		<div class="formulario">
 			<form action="modiffincaV.php" method="post">
 				<input type="text" name="nombre" placeholder="Nombre" value="<?php echo $row["nombre"]; ?>" autofocus required>
-				<input type="text" name="adress" placeholder="Direccion" value="<?php echo $row["direccion"]; ?>" required>	
+				<input type="text" name="adress" placeholder="Direccion" value="<?php echo $row["direccion"]; ?>" required>
+				<input type="tel" name="telefono" placeholder="Telefono" value="<?php echo $row["telefono"]; ?>" required>
 				<input type="hidden" name="_token" value="<?php echo NoCSRF::generate('_token'); ?>">
 				<input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
 				<input type="submit" value="Modificar">

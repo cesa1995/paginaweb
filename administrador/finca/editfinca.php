@@ -10,7 +10,7 @@
 	<title>Agregar</title>
 	<link rel="stylesheet" href="../../css/administrador.css">
 	<link rel="stylesheet" href="../../iconos/font/flaticon.css">
-    <link rel="stylesheet" href="../../css/second.css">
+    <link rel="stylesheet" href="../../css/finca.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -50,6 +50,7 @@
                 <tr>
                     <th><h1>id</h1></th>
                     <th><h1>Nombre</h1></th>
+                    <th><h1>Telefono</h1></th>
                     <th><h1>Direccion</h1></th>
                 </tr>
             </thead>
@@ -65,6 +66,7 @@
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['nombre']; ?></td>
+                    <td><?php echo $row['telefono']; ?></td>
                     <td><?php echo $row['direccion']; ?></td>
                     <td><a href="modiffinca.php?id=<?php echo $row['id']; ?>">Editar</a></td>
                     <td><a href="delefinca.php?id=<?php echo $row['id']; ?>">Eliminar</a></td>

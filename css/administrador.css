@@ -484,14 +484,16 @@ table td{
 /*formulario*/
 
 form {
+  left: 50%;
+  transform: translateX(-50%);
   position: relative;
-  margin-top: 100px;
   width:300px;
-  margin:0 auto;
   -webkit-animation:formAnim 1s ease-out 1s 1 normal both;
 }
 
-form input, select {
+
+
+form input, select ,textarea{
   appearance:none;
   color: #000000;
   width:100%;
@@ -502,7 +504,7 @@ form input, select {
   box-shadow:0 0 0 2px #cccccc;
   border-radius:5px;
 }
-form input:focus , select:focus{
+form input:focus , select:focus, textarea:focus{
   box-shadow:0 0 0 2px #9204b2;
   outline:none;
 }

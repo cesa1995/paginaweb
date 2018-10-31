@@ -1,4 +1,4 @@
-table td:nth-child(4),table td:nth-child(5) {
+table td:nth-child(5) {
   background:rgb(147,200,71);
   color:#fff;
   padding:5px;
@@ -8,8 +8,10 @@ table td:nth-child(4),table td:nth-child(5) {
   box-shadow: none;
 }
 
-table td:hover:nth-child(4),table td:hover:nth-child(5){
+table td:hover:nth-child(5){
   box-shadow:none;
   margin :0 auto;
   background: #808080;
 }
+
+/*TODO pendiente de reparar el botón editar*/
