@@ -8,6 +8,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="../../img/logo.ico" type="image/x-icon">
 	<title>Agregar</title>
 	<link rel="stylesheet" href="../../css/administrador.css">
 	<link rel="stylesheet" href="../../iconos/font/flaticon.css">
@@ -38,7 +39,8 @@
                         <li class="subitem"><a href="../equipo/addequipo.php"><span class="flaticon-agregar"></span>Agregar</a></li>
                         <li class="subitem"><a href="../equipo/editequipo.php"><span class="flaticon-editar"></span>Editar</a></li>
                     </ul>
-                </li>
+				</li>
+				<li class="item"><a href="../asociar/asociar.php"><span class="flaticon-sincronizar"></span>Asociar</a></li>
                 <li class="item"><a href="../../out.php"><span class="flaticon-salir"></span>Salir</a></li>
             </ul>
         </nav>

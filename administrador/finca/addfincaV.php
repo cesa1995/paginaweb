@@ -5,7 +5,6 @@
 		if (NoCSRF::check('_token', $_POST, false, 60*10, false)) {
 			$telefono=$_POST["telefono"];
 			$expresion='/^(\+?[0-9]{9,13})$/';
-			echo $telefono;
 			if (preg_match($expresion,$telefono)) {
 				echo "aqui";
 				include '../../conexion.php';
