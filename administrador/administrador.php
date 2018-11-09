@@ -1,5 +1,5 @@
 <?php
-	session_start();
+    session_start();
 	if (isset($_SESSION["usuario"]) and isset($_SESSION["id"]) and $_SESSION["nivel"]==0){
         include '../conexion.php';
         $sql="SELECT id, nivel FROM usuarios";

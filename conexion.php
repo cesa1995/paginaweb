@@ -1,6 +1,6 @@
 <?php
 
-	$conn = new mysqli("localhost", "root", "Cesitar95.", "agroSmart");
+	$conn = new mysqli("localhost", "cesar", "Cesitar95.", "agroSmart");
 	if (mysqli_connect_errno()) {
     	printf("Connect failed: %s\n", mysqli_connect_error());
 		exit();

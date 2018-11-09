@@ -312,7 +312,6 @@ main .titulo{
 .error{
   color: #9204b2;
   text-align: center;
-  -webkit-animation:formAnim 1s ease-out 1s 1 normal both;
 }
 
 .reset{
@@ -339,7 +338,6 @@ form {
           transform: translateX(-50%);
   position: relative;
   width:300px;
-  -webkit-animation:formAnim 1s ease-out 1s 1 normal both;
 }
 
 
@@ -378,14 +376,6 @@ form input[type="submit"]:focus {
   margin :0 auto;
 }
 
-@-webkit-keyframes formAnim {
-  0% {
-    opacity:.5;
-  }
-  100% {
-    opacity:1;
-  }
-}
 
 /*pie del documento html*/
 
