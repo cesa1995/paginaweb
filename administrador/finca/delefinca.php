@@ -8,6 +8,16 @@
 			$statement=$conn->prepare($sql);
 			$statement->bind_param("s",$_GET["id"]);
 			$statement->execute();
+
+			$sql="DELETE FROM fincaequ WHERE fincaid=?";
+			$statement=$conn->prepare($sql);
+			$statement->bind_param("s",$_GET['id']);
+			$statement->execute();
+
+			$sql="DELETE FROM fincausu WHERE fincaid=?";
+			$statement=$conn->prepare($sql);
+			$statement->bind_param("s",$_GET['id']);
+			$statement->execute();
 			header("location: editfinca.php");
 		}else{
 			header("location: editfinca.php");

@@ -376,6 +376,153 @@ form input[type="submit"]:focus {
   margin :0 auto;
 }
 
+        /*seccion de asociar*/
+.minimenu a{
+  text-decoration: none;
+  color: #f5f5f5;
+  margin: 10px;
+  background: #7cbcb3;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+
+}
+.minimenu a:hover{
+  color: #000000;
+}
+
+.minimenu {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+
+.info{
+  left: 20px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.asociar{
+  height: 600px;
+  width:300px;
+  position: relative;
+  overflow: auto;
+  background: #f5f5f5;
+  margin: 25px;
+  -webkit-box-shadow:0 0 0 2px #9204b2;
+          box-shadow:0 0 0 2px #9204b2;
+  border-radius:5px;
+}
+
+.asociar h5{
+  text-align: center;
+  margin: 5px;
+}
+
+.asociar a{
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.asociar .link{
+  position: relative;
+  width: 100%;
+  border-bottom: #000000 solid 2px;
+  border-top: #000000 solid 2px;
+}
+
+.asociar .link:hover{
+  border: #8bc53d solid 2px;
+}
+
+.agregar{
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin: 5px;
+  background: #808080;
+  border-radius: 5px;
+}
+
+.agregar a {
+  color: #f5f5f5;
+}
+
+/*ventana emergente de sincronizar finca y usuarios*/
+
+.emergente{
+  position: fixed;
+  width: 80%;
+  height: 300px;
+  max-width: 500px;
+  background: #f5f5f5;
+  z-index: 100;
+  margin: auto;
+  border: #9204b2 solid 2px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #808080;
+}
+
+.emergente .agregar{
+  width: 20px;
+  right: 10px;
+  margin: 5px;
+}
+
+.emergente .agregar a{
+  padding: 5px;
+}
+
+.emergente h4{
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.lista {
+  overflow: auto;
+}
+
+.lista li{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 5px 0 5px;
+  border: #808080 solid 2px;
+  padding: 5px;
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+.lista li:hover{
+  background: #9204b2;
+  color: #f5f5f5;
+}
+
+.lista li a{
+  background: #f5f5f5;
+  border-radius: 100px;
+  padding: 3px;
+}
+
+.lista li p{
+  position: relative;
+  padding: 3px;
+}
+
+.buscar{
+  margin: 0 5px;
+}
 
 /*pie del documento html*/
 

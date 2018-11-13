@@ -10,6 +10,12 @@
 			$statement=$conn->prepare($sql);
 			$statement->bind_param("s",$_GET["id"]);
 			$statement->execute();
+
+			$sql="DELETE FROM fincausu WHERE usuarioid=?";
+			$statement=$conn->prepare($sql);
+			$statement->bind_param("s",$_GET['id']);
+			$statement->execute();
+
 			header("location:edituser.php");
 		}else{
 			header("location: edituser.php");
